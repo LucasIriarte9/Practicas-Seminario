@@ -6,7 +6,7 @@ export const Juego = () => {
   const [numeroAleatorio, setNumeroAleatorio] = useState(0);
 
   const handleNumeroAleatorio = () => {
-    setNumeroAleatorio(Math.floor(Math.random()*3)+1);
+    setNumeroAleatorio(Math.floor(Math.random()*100)+1);
     if(inputValue === numeroAleatorio){
       confetti();
     }else{
